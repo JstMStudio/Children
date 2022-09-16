@@ -601,36 +601,7 @@ background-color: black;
 </ul>
 <br>
 <h1 style="color:red;">Create A Meeting Room</h1>
-  <script>
-    // Function to create meeting ID
-    function createMeeting() {
-          let meetingId =  'xxxxyxxx'.replace(/[xy]/g, function(c) {
-              var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-              return v.toString(16);
-          });
-          console.log("http://"+ window.location.host + "?meetingId="+ meetingId)
-          document.getElementById("copyInput").value = "https://"+ window.location.host + "/host/meeting.html?meetingId="+ meetingId;
-    }
-
-    // Function to copy the link
-    function copyFunction() {
-      /* Get the text field */
-      var copyText = document.getElementById("copyInput");
-
-      /* Select the text field */
-      copyText.select();
-      copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-      /* Copy the text inside the text field */
-      navigator.clipboard.writeText(copyText.value);
-    }
-  </script>
-  <div>
-    <button onclick="createMeeting()" class="button"><span>Create Meeting</span></button>
-    <br/>
-    <input type="text" id="copyInput" class="button" style="background-color:white;"><br>
-    <button onclick="myFunction()" class="button" style="padding:6px;background-color:red;color:cyan"><span>Copy Link</span></button>
-  </div>
+    <p style="color:red;">Meeting room had been disabled for children-version websites in order to comply with COPPA so we do not collect any children user data. Please use our meeting services when you are 13/16 years old or above.
       <br><br>
   <hr>
   <br>
